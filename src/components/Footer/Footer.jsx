@@ -5,7 +5,7 @@ import { AiFillInstagram } from "react-icons/ai";
 const Footer = () => {
   return (
     <footer id='footer'>
-    <span>Copyright &copy; 2022 Travelo. All rights reserved</span>
+    <span>Copyright &copy; 2022 Travelo. All rights reserved <br />Designed by Abdel Hamid Moussa </span>
     <ul className="links">
       <li>
         <a href="#hero">Home</a>
