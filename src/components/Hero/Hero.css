@@ -1,0 +1,114 @@
+#hero{
+    position: relative;
+    margin-top: 2rem;
+    height: 100%;
+    width: 100%;
+}
+#hero .background{
+    height: 100%;
+}
+#hero img{
+    max-width: 100%;
+    filter: brightness(60%);
+}
+#hero .contact{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}
+#hero .contact .title{
+    color: #fff;
+}
+#hero .contact .title h1{
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+}
+#hero .contact .title  p{
+    text-align: center;
+    padding: 0 30vw;
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+}
+#hero .search{
+    display: flex;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background: #ffffffce;
+}
+#hero .search .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 1.5rem;
+}
+#hero .search .container label{
+    font-size: 1.1rem;
+    color: #03045e;
+}
+#hero .search .container input{
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    color: black;
+}
+#hero .search .container input::placeholder{
+    color: black;
+}
+#hero .search .container input:focus{
+    outline: none;
+}
+#hero .search button{
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    border: none;
+    color: #fff;
+    background-color: #4361ee;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    transition:var(--transition); 
+}
+#hero .search button:hover{
+    background-color: #023e8a;
+}
+/*#############MEDIA QUIRES (SMALL DEVICES)###############*/
+@media screen and (min-width: 280px) and (max-width : 1024px){
+    #hero{
+        height: 25rem;
+    }
+    #hero .background img{
+        height: 100%;
+    }
+    #hero .contact .title h1{
+        font-size: 1rem;
+    }
+    #hero .contact .title p {
+        font-size: 0.8rem;
+        padding: 1vw;
+    }
+    #hero .search{
+        flex-direction: column;
+        padding: 0.8rem;
+        gap: 0.8rem;
+    }
+    #hero .search .container {
+        padding: 0 0.8rem;
+    }
+    #hero .search .container input[type = 'date']{
+        padding-left: 1rem;
+    }
+    #hero .search button{
+        padding: 1rem;
+        font-size: 1rem;
+    }
+}

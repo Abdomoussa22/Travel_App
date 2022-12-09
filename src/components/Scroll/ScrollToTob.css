@@ -1,0 +1,17 @@
+#scroll div{
+    display: blo;
+    position: fixed;
+    cursor: pointer;
+    z-index: 10;
+    bottom: 1rem;
+    right: 2rem;
+    border-radius: 2rem;
+    background-color: #1900ff39;
+    padding: 1rem;
+}
+#scroll div img{
+    height: 1.5rem;
+}
+#scroll div.hidden{
+    display: none;
+}

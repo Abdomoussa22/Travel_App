@@ -1,0 +1,69 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .brand .container{
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 0.4rem;
+   font-size: 1.2rem;
+   font-weight: 900;
+   text-transform: capitalize;
+}
+nav .toggle{
+    display: none;
+}
+nav ul{
+    display:flex ;
+    list-style: none;
+    gap: 1rem;
+}
+nav ul li a{
+    text-decoration: none;
+    color:#0077b6 ;
+    font-size: 1.2rem;
+    transition:0.1s ease-in-out ;
+}
+nav ul li a.active{
+    color: #023e8a;
+    font-weight: 900;
+}
+nav ul li a:hover{
+    color: #023e8a;
+}
+nav button{
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    border: none;
+    color: #fff;
+    background-color: #48cae4;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    transition:var(--transition); 
+    cursor: pointer;
+}
+nav button:hover{
+    background-color: #023e8a;
+}
+nav .menu , nav .close_menu{
+    font-size: 22px;
+}
+ /*#############MEDIA QUIRES (SMALL DEVICES)###############*/
+ @media screen and (min-width: 280px) and (max-width : 1024px){
+    nav .brand{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    nav ul , nav button{
+        display: none;
+    }
+    nav .toggle{
+        display: block;
+    }
+ }

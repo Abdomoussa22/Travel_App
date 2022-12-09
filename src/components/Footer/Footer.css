@@ -1,0 +1,41 @@
+#footer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #d0d8ff;
+    padding: 2.5rem;
+    border-radius: 0.5rem;
+}
+#footer ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+#footer ul li a{
+    text-decoration: none;
+    color: black;
+    transition: var(--transition);
+
+}
+#footer ul li a:hover{
+    color: #302ce9;
+}
+#footer .social__links li{
+    font-size: 1.3rem;
+    transition: var(--transition);
+}
+#footer .social__links li:hover{
+    color:#302ce9 ;
+}
+ /*#############MEDIA QUIRES (SMALL DEVICES)###############*/
+ @media screen and (min-width: 280px) and (max-width : 1024px){
+    #footer{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    #footer ul{
+        flex-direction: column;
+    }
+    #footer .social__links{
+        flex-direction: row;
+    }
+ }

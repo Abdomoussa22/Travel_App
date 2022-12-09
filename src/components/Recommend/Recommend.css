@@ -1,0 +1,81 @@
+#recommend{
+    padding: 2rem 0;
+}
+#recommend .title{
+    text-align: center;
+}
+#recommend .package{
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+#recommend .package ul{
+    list-style: none;
+    display: flex;
+    width: max-content;
+}
+#recommend .package ul li{
+    padding: 1rem 2rem;
+    border-bottom: 0.1rem solid black;
+    cursor: pointer;
+}
+#recommend .package ul li.active{
+    border-bottom: 0.5rem solid #8338ec;
+}
+#recommend .destinations{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+    padding: 2rem;
+}
+#recommend .destination{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+    background-color: #8338ec14;
+    border-radius: 1rem;
+    transition: var(--transition);
+}
+#recommend .destination:hover{
+    transform: translateX(0.4rem) translateY(-1rem);
+    box-shadow: rgba(0, 0, 0, 0.35)0 5px 15px;
+}
+#recommend .destination img{
+    max-width: 100%;
+}
+#recommend .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#recommend .services{
+    display: flex;
+    gap: 0.3rem;
+}
+#recommend .services img{
+    width: 2rem;
+    background-color: #4d2ddb84;
+    padding: 0.2rem 0.4rem;
+    border-radius: 1rem;
+}
+#recommend .distance{
+    display: flex;
+    justify-content: space-between;
+}
+/*#############MEDIA QUIRES (SMALL DEVICES)###############*/
+@media screen and (min-width: 280px) and (max-width : 1024px){
+    #recommend .package ul li{
+        padding: 0 0.5rem;
+          font-size: 2vh;
+          padding-bottom: 1rem;
+    }
+    #recommend .package ul li.active{
+        border-bottom-width:0.3rem ;
+    }
+    #recommend .destinations{
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+}
+
